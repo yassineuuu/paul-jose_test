@@ -15,17 +15,12 @@ body{
 
 header{
     background-color: #232323;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5rem 1rem 3rem;
+    padding: 1rem 5rem 1rem 3rem; 
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+.humberger{
+    display: none;
 }
+
 .links>ul{
     display: flex;
     align-items: center;
@@ -124,4 +119,56 @@ nav{
 }
 .footerLogo>img{
     width: 60%;
+}
+
+
+/* Media Query part (Responsive) */
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+    /* header */
+
+    header{
+        justify-content: space-between;
+    }
+    header>.row>.logo{
+        padding-top: .5rem;
+        text-align: center;
+    }
+    header>.row>.logo>img{
+        width: 80%;
+    }
+    nav{
+        display: none;
+    }
+    .call{
+        display: none;
+    }
+    .humberger{
+        display: block;
+        margin: 1rem;
+    }
+
+    /* main */
+    main{
+        margin: 3rem 0 3rem;
+    }
+    .Form-Section{
+        border-radius: 10px;
+        width: 70vw;
+        background-image: url("../images/illudtration-opacity.svg");
+    }
+    .illustration-Section{
+        display: none;
+    }
+
+    /* footer */
+    .footer-links>ul{
+        display: none;
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 375px){
+
 }
