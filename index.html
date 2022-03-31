@@ -11,6 +11,7 @@
     <title>Sign-Up form</title>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -23,7 +24,14 @@
             </div>
             <div class="col-2">
                 <div class="humberger">
-                    <i class="fa-solid fa-bars bars" style="color: #fff;"></i>
+                    <input type="checkbox" id="humCheck" onclick="getMenu()">
+                    <i class="fa-solid fa-bars fa-2x bars" id="openMenu" style="color: #fff;"></i>
+                    <i class="fa-solid fa-x fa-2x" id="closeMenu"></i>
+                    <script src="js/script.js">
+                        
+                        
+                    </script>
+                    
                 </div>
             </div>
             
@@ -41,6 +49,15 @@
                 
                 
             </nav>
+            <div class="tabLinks links" id="tabLinks">
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <div class="call col">
                 <img src="images/phone.png" alt="phone">
             </div>
@@ -68,14 +85,14 @@
                 <div class="mb-3">
                     <input type="password" class="form-control" id="mdp-confirmation" placeholder="Confirmer mot de passe">
                 </div>
-                <div class="container mb-3 d-flex justify-content-betwenn">
-                    <div class="form-check col-4">
+                <div class="submition">
+                    <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="rememberme">
                         <label class="form-check-label" for="rememberme">
                             Se souvenir de moi
                         </label>
                     </div>
-                    <div class="col-6"></div>
+                    <div class=""></div>
                     <div class="Insc-button col-2">
                         <button class="btn inscription" type="submit">S'inscrire</button>
                     </div>
@@ -120,6 +137,7 @@
         <div class="row align-items-center">
             <div class="copyright col">
                 <p class="attribution">
+                    <i class="fa-solid fa-copyright" style="color: #fff;"></i>
                     Coded by <a href="#">Yassine MAKHLOUK</a>.
                 </p>
             </div>

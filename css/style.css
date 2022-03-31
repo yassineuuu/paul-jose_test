@@ -20,6 +20,13 @@ header{
 .humberger{
     display: none;
 }
+.tabLinks{
+    margin-top: -100rem;
+}
+#closeMenu{
+    color: #fff;
+    display: none;
+}
 
 .links>ul{
     display: flex;
@@ -64,6 +71,11 @@ main{
 
 .illustration-Section>.illustration>img{
     width: 100%;
+}
+.submition{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    margin: 1rem 0 3rem ;
 }
 
 .facebook-insc{
@@ -148,6 +160,13 @@ nav{
         display: block;
         margin: 1rem;
     }
+    .humberger>input{
+        z-index: 2;position: absolute;
+        width: 2rem;
+        height: 2rem;
+        top: 37px;
+        opacity: 0;
+    }
 
     /* main */
     main{
@@ -169,6 +188,43 @@ nav{
 }
 
 /* phone */
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 630px){
 
+    header>.row>.logo{
+        width: 50vw;
+        margin-right: 30%;
+    }
+    header>.row>.logo>img{
+        width: 100%;
+    }
+    .Form-Section{
+        width: 90vw;
+    }
+    .tabLinks>ul{
+        flex-direction: column;
+    }
+    
+    .facebook-insc>button{
+        width: 105%;
+    }
+    .google-insc>button{
+        width: 105%;
+    }
+    .submition{
+        grid-template-columns: 2fr 1fr;
+    }
+    .Insc-button{
+        grid-area: 2 / 1 ;
+    }
+
+    /* footer */
+    .footerLogo>img{
+        width: 100%;
+    }
+    .copyright>p{
+        font-size: 10px;
+    }
+    .copyright>p>a{
+        font-size: 10px;
+    }
 }
